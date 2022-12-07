@@ -55,5 +55,5 @@ for line in lines:
                     print("Found Origins for " + line)
                     # write to output file
                     with open("found_modpacks.txt", "a") as f:
-                        f.write(json.dumps(modpack_id) + ",")
+                        f.write('"' + line + '",')
                     continue
