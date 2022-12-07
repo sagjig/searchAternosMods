@@ -56,4 +56,4 @@ for line in lines:
                     # write to output file
                     with open("found_modpacks.txt", "a") as f:
                         f.write(json.dumps(modpack_id) + ",")
-                    break
+                    continue
